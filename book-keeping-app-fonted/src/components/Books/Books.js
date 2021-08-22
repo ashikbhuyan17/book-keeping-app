@@ -42,8 +42,8 @@ const Books = ({ history }) => {
                   books.map(book => {
                     return (
                       <tr className='table-dark' key={book._id}>
-                        <th scope='row'>{book.title}</th>
                         <td>{book.author}</td>
+                        <th scope='row'>{book.title}</th>
                         <td>
                           <i
                             onClick={() => handlerDeleteBook(book._id)}
